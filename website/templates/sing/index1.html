@@ -1,0 +1,15 @@
+{% extends 'sing/base.html' %}
+{% block content %}
+<h2>'E equals mc squared
+I got a blip inside my head'</h2>
+<h3>Formula (Labrinth)</h3>
+<h4>Выберите на каком языке вы бы хотели увидеть перевод: </h4>
+<ul>
+  <li> <a href="http://127.0.0.1:8000/fr"> <h4>Перевод на французском</h4> </a> </li>
+  <li> <a href="http://127.0.0.1:8000/de"> <h4>Перевод на немецком</h4> </a> </li>
+  <li> <a href="http://127.0.0.1:8000/es"> <h4>Перевод на испанском</h4> </a> </li>
+</ul>
+<audio controls>
+  <source src="formula.mp3" type="audio/mpeg">
+</audio>
+{% endblock %}

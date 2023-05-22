@@ -1,0 +1,28 @@
+{% extends 'day/baz.html' %}
+{% load static %}
+{% block content %}
+
+{% if datte == "Monday" %}
+<img src = "{% static 'day/Monday.jpg' %}">
+<h1>Понедельник</h1>
+{% elif datte == "Tuesday" %}
+<img src = "{% static 'day/tuesday.jpg' %}">
+<h1>Вторник</h1>
+{% elif datte == "Wednesday" %}
+<img src = "{% static 'day/wednsday.jpg' %}">
+<h1>Среда</h1>
+{% elif datte == "Thursday" %}
+<h1>Четверг</h1>
+<img src = "{% static 'day/thursday.jpg' %}">
+{% elif datte == "Friday" %}
+<img src = "{% static 'day/friday.png' %}">
+<h1>Пятница</h1>
+{% elif datte == "Saturday" %}
+<img src = "{% static 'day/saturday.jpg' %}">
+<h1>Суббота</h1>
+{% else %}
+<img src = "{% static 'day/sunday.jpg' %}">
+<h1>Воскресенье</h1>
+{% endif %}
+
+{% endblock %}

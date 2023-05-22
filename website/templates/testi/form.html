@@ -1,0 +1,12 @@
+{% extends 'testi/base.html' %}
+{% block content %}
+<h1>Add new post</h1>
+<form action="save" method="post">
+    {% csrf_token %}
+    <p>Title* <input type="text" required name="title"></p>
+    <p>Description: <textarea name="discription" cols="30" rows="10"></textarea></p>
+    <button type="submit" >Save</button>
+</form>
+
+
+{% endblock %}
